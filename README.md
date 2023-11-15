@@ -108,7 +108,7 @@ Para questões ou sugestões, entre em contato com `matheus.z.monteiro@gmail.com
 
 ## 🤖 Notas de Versão
 - **Versão 1.0.1 (Data):**
-  - Funcionalidade principal implementada.
+  - Funcionalidade principal implementada e corrigida.
   
 ## 📜 Perguntas Frequentes (FAQ)
 1. **Como posso ajustar os parâmetros do modelo?**
