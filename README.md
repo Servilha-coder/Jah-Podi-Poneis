@@ -21,7 +21,7 @@ Os modelos selecionados para a predição foram: regressão linear e floresta al
 
 Todos os modelos utilizaram os features após uma normalização padrão dos features. As florestas aleatórias foram submetidas à otimização de hiperparâmetros por busca aleatória em um espaço de busca pré-definido, por conta do custo computacional de treinamento desses modelos. Para termos um modelo de base para comparação, treinamos um modelo baseline para cada caso.
 
-De forma sintética, o notebook `main.ypynb` está estruturado da seguinte forma:
+De forma sintética, o notebook `main.ipynb` está estruturado da seguinte forma:
 
 1. **Importações:** Inicialmente, são importadas as bibliotecas e funções necessárias para o desenvolvimento do trabalho, dentre elas: `matplotlib`, `numpy`, `pymatgen`, `mendeleev`, `matminer` e  `sklearn`.
 
@@ -44,8 +44,8 @@ De forma sintética, o notebook `main.ypynb` está estruturado da seguinte forma
 
 ## ⚔️ Como Executar
 
-1. Instale as dependências usando `pip install -r requirements.txt`.
-2. Execute `python main.ypynb` para treinar e avaliar os modelos.
+1. Instale as dependências usando `pip install -r requirements.txt`, ou, executar o notebook `Download de Bibliotecas.ipynb` caso queria baixar as bibliotecas `matminer` e `pymatgen` direto no kernel ILUMPY.
+2. Execute `python main.ipynb` para treinar e avaliar os modelos.
 
 
 ## 🦹‍♀️ Contribuição
