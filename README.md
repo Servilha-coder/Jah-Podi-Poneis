@@ -100,7 +100,7 @@ Contribuições são bem-vindas! Para contribuir:
 - O projeto utiliza a biblioteca `ucsb_thermoelectrics`, disponível em (https://next-gen.materialsproject.org).
 
 ## 💂‍♀️ Contato
-Para questões ou sugestões, entre em contato com `matheus.z.monteiro@gmail.com`, `srgservilha.of@gmail.com`, `kaduedugsantos@gmail.com`.
+Para questões ou sugestões, entre em contato com `matheus.z.monteiro@gmail.com`, `srgservilha.of@gmail.com`, `kaduedugsantos@gmail.com` e/ou `klinftoon@gmail.com`.
 
 ## 🚦 Badges
 [![Build Status](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis.svg?branch=main)](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis)
