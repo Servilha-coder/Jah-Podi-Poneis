@@ -1,4 +1,4 @@
-e git+https://github.com/Servilha-coder/Jah-Podi-Poneis/edit/main/requirements.txt
+e git+https://github.com/Servilha-coder/Jah-Podi-Poneis/blob/main/requirements.txt
 matminer==0.9.0
 mendeleev==0.14.0
 pymatgen==2.5.5
