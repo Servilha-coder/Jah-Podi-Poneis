@@ -1,4 +1,4 @@
-# Jah'Podi Pôneis - Trabalho Semestral de Aprendizado de Máquina
+# 🏇Jah'Podi Pôneis - Prevendo Band Gap de Materiais 🏇
 
 ## Introdução
 
