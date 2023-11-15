@@ -97,18 +97,11 @@ Contribuições são bem-vindas! Para contribuir:
 4. Abra um pull request.
 
 ## 👷‍♀️ Créditos
-- O projeto utiliza a biblioteca `ucsb_thermoelectrics`, disponível em (https://next-gen.materialsproject.org).
+- O projeto utiliza o dataset `expt_gap`, disponível em [([https://next-gen.materialsproject.org](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html#expt-gap))](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html#expt-gap).
 
 ## 💂‍♀️ Contato
 Para questões ou sugestões, entre em contato com `matheus.z.monteiro@gmail.com`, `srgservilha.of@gmail.com`, `kaduedugsantos@gmail.com` e/ou `klinftoon@gmail.com`.
 
-## 🚦 Badges
-[![Build Status](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis.svg?branch=main)](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis)
-[![Coverage Status](https://coveralls.io/repos/github/Servilha-coder/Jah-Podi-Poneis/badge.svg?branch=main)](https://coveralls.io/github/Servilha-coder/Jah-Podi-Poneis?branch=main)
-
-## 🤖 Notas de Versão
-- **Versão 1.0.1 (Data):**
-  - Funcionalidade principal implementada e corrigida.
   
 ## 📜 Perguntas Frequentes (FAQ)
 1. **Como posso ajustar os parâmetros do modelo?**
