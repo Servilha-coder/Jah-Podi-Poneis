@@ -1,4 +1,4 @@
-# Jah-Podi-Poneis
+# Jah'Podi Pôneis
 
 $$
 \frac{-\infty}{\lambda}
