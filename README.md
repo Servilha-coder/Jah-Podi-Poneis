@@ -32,41 +32,6 @@ De forma sintética, o notebook `main.ypynb` está estruturado da seguinte forma
 4. **Discussão dos Resultados:** Ao final do notebook, há uma discussão sobre os resultados obtidos, incluindo uma análise do desempenho de cada modelo nos dois casos e uma reavaliação das hipóteses iniciais.
 
 
-## 🤖 Tratamento e Organização dos Dados
-
-1. **Tratamento do Dataset:**
-   - Remoção de colunas não utilizadas e linhas com valores NaN.
-   - Utilização da biblioteca pymatgen para criar uma lista de dicionários representando as composições em proporção molar.
-   - Adição de colunas ao dataframe para cada elemento químico presente no dataset.
-
-2. **Eletronegatividade:**
-   - Uso do módulo mendeleev para obter os valores de eletronegatividade de Pauling dos elementos.
-   - Criação de colunas contendo a proporção molar multiplicada pela eletronegatividade de cada átomo.
-
-3. **Separção de Features:**
-   - Divisão dos conjuntos de features que serão utilizados nos Casos 1 e 2: `FEATURES1` contém apenas a proporção molar, `FEATURES2` contém a proporção molar multiplicada pela eletronegatividade, e `TARGET` contém o valor do band gap.
-
-## 👨‍🔬 Caso 1 - Apenas Proporção Molar
-
-### Resultados
-
-- RMSE do modelo baseline: 1.71
-- RMSE da regressão linear com PCA: 1.65
-- RMSE da floresta aleatória otimizada: 1.21
-
-
-## 👩‍🔬 Caso 2 - Proporção Molar Multiplicada pela Eletronegatividade
-
-### Resultados
-
-- RMSE do modelo baseline: 1.71
-- RMSE da regressão Lasso: 1.22
-- RMSE da floresta aleatória otimizada: 0.99
-
-## 👩‍🎓 Conclusão
-
-
-
 ## 🫅 Dependências
 
 - Python 3.x
@@ -80,11 +45,8 @@ De forma sintética, o notebook `main.ypynb` está estruturado da seguinte forma
 ## ⚔️ Como Executar
 
 1. Instale as dependências usando `pip install -r requirements.txt`.
-2. Execute `python main.py` para treinar e avaliar os modelos.
+2. Execute `python main.ypynb` para treinar e avaliar os modelos.
 
-
-## 📲 Configuração
-- Configure as opções no arquivo `config.yaml` conforme necessário.
 
 ## 🦹‍♀️ Contribuição
 Contribuições são bem-vindas! Para contribuir:
@@ -94,22 +56,14 @@ Contribuições são bem-vindas! Para contribuir:
 4. Abra um pull request.
 
 ## 👷‍♀️ Créditos
-- O projeto utiliza a biblioteca `ucsb_thermoelectrics`, disponível em (https://next-gen.materialsproject.org).
+- O projeto utiliza a biblioteca `expt_gap`, disponível em ([https://next-gen.materialsproject.org](https://hackingmaterials.lbl.gov/matminer/dataset_summary.html#expt-gap)).
 
 ## 💂‍♀️ Contato
 Para questões ou sugestões, entre em contato com `matheus.z.monteiro@gmail.com`, `srgservilha.of@gmail.com`, `kaduedugsantos@gmail.com` e/ou `klinftoon@gmail.com`.
 
-## 🚦 Badges
-[![Build Status](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis.svg?branch=main)](https://travis-ci.org/Servilha-coder/Jah-Podi-Poneis)
-[![Coverage Status](https://coveralls.io/repos/github/Servilha-coder/Jah-Podi-Poneis/badge.svg?branch=main)](https://coveralls.io/github/Servilha-coder/Jah-Podi-Poneis?branch=main)
 
-## 🤖 Notas de Versão
-- **Versão 1.0.1 (Data):**
-  - Funcionalidade principal implementada e corrigida.
-  
 ## 📜 Perguntas Frequentes (FAQ)
-1. **Como posso ajustar os parâmetros do modelo?**
-   - Consulte o arquivo `config.yaml` para ajustes de parâmetros.
+
 
 
 ### 👏 Agradecimentos
