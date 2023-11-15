@@ -1,5 +1,5 @@
 # Jah-Podi-Poneis
 
 $$
-\frac{-infity}{\lambda}
+\frac{-inf}{\lambda}
 $$
