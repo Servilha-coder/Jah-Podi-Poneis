@@ -9,7 +9,7 @@ O objetivo deste trabalho é utilizar modelos e estratégias de aprendizado de m
 1. Utilizando como features apenas a proporção molar dos materiais.
 2. Utilizando como features a proporção molar multiplicada pelos valores de eletronegatividade na escala de Pauling dos átomos que compõem os materiais.
 
-Esse trabalho utiliza o dataset `expt_gap` da biblioteca `matminer`, que contém os valores experimentais de band gap de diversos materiais semicondutores, sendo essa a variável que desejamos prever. Para isso, serão treinados dois modelos para cada caso: regressão linear e floresta aleatória.
+Esse trabalho utiliza o dataset `expt_gap` da biblioteca `matminer`, que contém os valores experimentais de band gap de diversos materiais semicondutores, sendo essa a variável que desejamos prever. Para isso, treinamos quatro modelos para cada caso: regressão linear e floresta aleatória apenas com normalização padrão, e regressão linear e floresta aleatória com normalização padrão e redução de dimensionalidade com PCA.
 
 ## 📠 Descrição Geral do Projeto
 
@@ -17,7 +17,7 @@ Inicialmente, queríamos relacionar a fórmula química do material com o seu va
 
 Iniciando o processo de tratamento de dados, realizamos um parsing das fórmulas químicas de cada material, para que pudéssemos extrair a proporção molar de cada material das strings que estavam no dataset `expt_gap`. Para isso, utilizamos a função `Composition`, da biblioteca `pymatgen`, e para adicionar posteriormente os valores de eletronegatividade, utilizamos a biblioteca `mendeleev`.
 
-Os modelos selecionados para a predição foram: regressão linear e floresta aleatória. A regressão linear foi escolhida pela hipótese de que talvez houvesse uma relação linear entre os features e o valor de band gap, porém, para diminuir a dimensionalidade do problema, utilizamos o PCA, mantendo 90% da variância do dataset. Já a floresta aleatória foi escolhida por conta de ser um modelo extremamente robusto, por conta de ser formado por diversas árvores de decisão. Talvez o valor de band gap se comporte como regiões mais separadas no espaço dos features, característica que poderia ser captada pelo modelo de floresta aleatória. 
+Os modelos selecionados para a predição foram: regressão linear e floresta aleatória. A regressão linear foi escolhida pela hipótese de que talvez houvesse uma relação linear entre os features e o valor de band gap. Já a floresta aleatória foi escolhida por conta de ser um modelo extremamente robusto, por conta de ser formado por diversas árvores de decisão. Talvez o valor de band gap se comporte como regiões mais separadas no espaço dos features, característica que poderia ser captada pelo modelo de floresta aleatória. Em ambos os modelos testamos a redução de dimensionalidade com o PCA, utilizando 90% da variância dos features iniciais.
 
 Todos os modelos utilizaram os features após uma normalização padrão dos features. As florestas aleatórias foram submetidas à otimização de hiperparâmetros por busca aleatória em um espaço de busca pré-definido, por conta do custo computacional de treinamento desses modelos. Para termos um modelo de base para comparação, treinamos um modelo baseline para cada caso.
 
