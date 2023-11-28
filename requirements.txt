@@ -1,7 +1,7 @@
 e git+https://github.com/Servilha-coder/Jah-Podi-Poneis/blob/main/requirements.txt
 matminer==0.9.0
 mendeleev==0.14.0
-pymatgen==2.5.5
+pymatgen==2023.11.12
 numpy==1.26.2
 matplotlib==3.8.1
 scikit-learn==1.3.2
